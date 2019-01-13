@@ -10,7 +10,6 @@ class LatestsPosts extends React.Component {
   }
   render() {
     if (!this.props.latestsPosts.length) {
-      console.log("HEEEEEEEEREEEEEEEE");
       return <h1>oooooops...</h1>;
     } else {
       return (
