@@ -1,15 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-###Test task for DevelopsToday
+## Test task for DevelopsToday
 
-##How to start.
+### Set up client.
 Clone repository to your local machine.
-setup npm - 'npm install'
-start local server - 'npm start'
+- setup npm - 'npm install'
+- start local server - 'npm start'
 
-## Bootstrapping API
+### Bootstrapping API
 [download, unarchive](https://drive.google.com/file/d/1L-ofA5W57kQE-TleXvxKxXqTjK7ir3ll/view?usp=sharing)
-
 - Setup _npm_ dependencies – `$ yarn`
 - Start API server – `$ yarn start`
 
