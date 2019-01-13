@@ -3,7 +3,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Test task for DevelopsToday
 
 ### Set up client.
-Clone repository to your local machine.
+Clone repository to your local machine - 'git clone https://github.com/Oodmincheg/blog.git'
+
 - setup npm - 'npm install'
 - start local server - 'npm start'
 
