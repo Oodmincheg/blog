@@ -14,3 +14,5 @@ Clone repository to your local machine - 'git clone https://github.com/Oodminche
 - Start API server – `$ yarn start`
 
 That's all, open [http://localhost:3000](http://localhost:3000) and see mini-blog. You can open posts and add comments to them.
+
+If server with DB is down you will get "ooooooops" in your browser.
