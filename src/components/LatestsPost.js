@@ -9,13 +9,18 @@ class LatestsPosts extends React.Component {
     this.props.getPropsLatestsPosts();
   }
   render() {
-    return (
-      <div className="post-list">
-        {this.props.latestsPosts.map(post => (
-          <PostDescription post={post} key={post.id} />
-        ))}
-      </div>
-    );
+    if (!this.props.latestsPosts.length) {
+      console.log("HEEEEEEEEREEEEEEEE");
+      return <h1>oooooops...</h1>;
+    } else {
+      return (
+        <div className="post-list">
+          {this.props.latestsPosts.map(post => (
+            <PostDescription post={post} key={post.id} />
+          ))}
+        </div>
+      );
+    }
   }
 }
 
