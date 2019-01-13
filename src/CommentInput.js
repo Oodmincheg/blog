@@ -23,8 +23,16 @@ class CommentInput extends React.Component {
   render() {
     return (
       <form onSubmit={this.createComment}>
-        <textarea ref={userInput => (this.input = userInput)} />
-        <input type="submit" />
+        <label for="comment">Leave a comment</label>
+        <br />
+        <textarea
+          id="comment"
+          rows="5"
+          cols="100"
+          ref={userInput => (this.input = userInput)}
+        />
+        <br />
+        <input type="submit" value="Post the comment" />
       </form>
     );
   }

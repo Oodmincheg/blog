@@ -6,12 +6,11 @@ import PostDescription from "./PostDescription";
 
 class LatestsPosts extends React.Component {
   componentDidMount() {
-    console.log("fffffffff");
     this.props.getPropsLatestsPosts();
   }
   render() {
     return (
-      <div>
+      <div className="post-list">
         {this.props.latestsPosts.map(post => (
           <PostDescription post={post} key={post.id} />
         ))}
