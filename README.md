@@ -12,4 +12,4 @@ Clone repository to your local machine.
 - Setup _npm_ dependencies – `$ yarn`
 - Start API server – `$ yarn start`
 
-That's all, open localhost:3000 and see mini-blog. You can open posts and add comments to them.
+That's all, open [http://localhost:3000](http://localhost:3000) and see mini-blog. You can open posts and add comments to them.
