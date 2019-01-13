@@ -1,26 +1,26 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-    .post-list {
-        list-style-type: none;
-        display: flex;
-        
-    }
-    body {
-        font-family: 'Courier New'
-    }
-    form {
-        text-align: center;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    h1 {
-      text-align: center
-    }
-    span {
-        font-size: 12px;
-        margin-left: 50px
-    }
+.post-list {
+    list-style-type: none;
+    display: flex;
+    
+}
+body {
+    font-family: 'Courier New'
+}
+form {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1 {
+  text-align: center
+}
+span {
+    font-size: 12px;
+    margin-left: 50px
+}
     
 `;
 

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { connect } from "react-redux";
-import { getAPILatestsPosts } from "./actionCreators";
+import { getAPILatestsPosts } from "../store/actionCreators";
 import PostDescription from "./PostDescription";
 
 class LatestsPosts extends React.Component {

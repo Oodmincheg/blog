@@ -1,5 +1,5 @@
 import React from "react";
-import { getAPICurrentPost } from "./actionCreators";
+import { getAPICurrentPost } from "../store/actionCreators";
 import { connect } from "react-redux";
 import PostBody from "./PostBody";
 import CommentInput from "./CommentInput";

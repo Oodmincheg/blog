@@ -1,7 +1,7 @@
 import React from "react";
 import { Provider } from "react-redux";
 import { HashRouter, Route } from "react-router-dom";
-import store from "./store";
+import store from "../store/store";
 import MainPage from "./MainPage";
 import ViewPost from "./ViewPost";
 
