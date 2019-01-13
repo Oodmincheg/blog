@@ -1,8 +1,4 @@
-import {
-  ADD_LATESTS_POSTS,
-  ADD_CURRENT_POST,
-  SET_COMMENT_TEXT
-} from "./actions";
+import { ADD_LATESTS_POSTS, ADD_CURRENT_POST } from "./actions";
 import { combineReducers } from "redux";
 
 const latestsPosts = (state = [], action) => {
@@ -20,15 +16,9 @@ const currentPost = (state = {}, action) => {
   return state;
 };
 
-const commentText = (state = "", action) => {
-  if (action.type === SET_COMMENT_TEXT) {
-  }
-  return commentText;
-};
 const rootReducer = combineReducers({
   latestsPosts,
-  currentPost,
-  commentText
+  currentPost
 });
 
 export default rootReducer;

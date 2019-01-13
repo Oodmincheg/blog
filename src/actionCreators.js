@@ -1,8 +1,4 @@
-import {
-  ADD_LATESTS_POSTS,
-  ADD_CURRENT_POST,
-  SET_COMMENT_TEXT
-} from "./actions";
+import { ADD_LATESTS_POSTS, ADD_CURRENT_POST } from "./actions";
 
 export function addLatestsPosts(posts) {
   return { type: ADD_LATESTS_POSTS, payload: posts };
@@ -10,9 +6,7 @@ export function addLatestsPosts(posts) {
 export function addCurrentPost(post) {
   return { type: ADD_CURRENT_POST, payload: post };
 }
-export function setCommentText(commentString) {
-  return { type: SET_COMMENT_TEXT, payload: commentString };
-}
+
 export function getAPILatestsPosts() {
   const url = "http://localhost:3001/posts";
 

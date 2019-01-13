@@ -1,13 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Content, GlobalStyle } from "./MainPage";
-import styled from "styled-components";
-
-const P = styled.p`
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px;
-`;
+import { Content, GlobalStyle, P } from "./Style";
 
 const PostBody = props => {
   if (props.comments === undefined) {
