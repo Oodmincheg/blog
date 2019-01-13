@@ -1,28 +1,28 @@
 import React from "react";
+
 import { connect } from "react-redux";
 import { getAPILatestsPosts } from "./actionCreators";
+import PostDescription from "./PostDescription";
 
 class LatestsPosts extends React.Component {
   componentDidMount() {
+    console.log("fffffffff");
     this.props.getPropsLatestsPosts();
   }
   render() {
-    console.log("in comp", this.props.latestsPosts);
     return (
       <div>
         {this.props.latestsPosts.map(post => (
-          <p>{post.body}</p>
+          <PostDescription post={post} key={post.id} />
         ))}
       </div>
     );
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    latestsPosts: state.latestsPosts
-  };
-};
+const mapStateToProps = state => ({
+  latestsPosts: state.latestsPosts
+});
 
 const mapDispatchToProps = dispatch => ({
   getPropsLatestsPosts() {
