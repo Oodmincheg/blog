@@ -1,6 +1,6 @@
 import React from "react";
 import { Provider } from "react-redux";
-import { HashRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import store from "../store/store";
 import MainPage from "./MainPage";
 import ViewPost from "./ViewPost";
@@ -8,7 +8,7 @@ import ViewPost from "./ViewPost";
 class App extends React.Component {
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <Provider store={store}>
           <div>
             <Route exact path="/" render={() => <MainPage />} />
@@ -19,7 +19,7 @@ class App extends React.Component {
             />
           </div>
         </Provider>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
